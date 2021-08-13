@@ -7,6 +7,11 @@ window.onload = function () {
 	startTimer(timer, display);
 };
 
+window.addEventListener('blur', () => {
+	document.getElementById("regForm").submit();
+});
+
+
 function startTimer(duration, display) {
 	var timer = duration, minutes, seconds;
 	setInterval(function () {

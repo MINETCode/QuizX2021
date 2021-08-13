@@ -9,6 +9,7 @@ const Quiz = require('../models/quiz');
 
 function createQuiz(
 	school,
+	ans0,
 	ans1,
 	ans2,
 	ans3,
@@ -33,6 +34,7 @@ function createQuiz(
 
 	var quizData = {
 		school,
+		ans0,
 		ans1,
 		ans2,
 		ans3,
@@ -78,6 +80,7 @@ router.get('/', ensureAuthenticated, (req, res) => {
 router.post('/quiz', ensureAuthenticated, async (req, res) => {
 	createQuiz(
 		req.user.school,
+		req.body.ans0,
 		req.body.ans1,
 		req.body.ans2,
 		req.body.ans3,
