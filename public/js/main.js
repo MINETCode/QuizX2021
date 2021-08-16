@@ -1,8 +1,8 @@
 window.onload = function () {
 	setTimeout(function () {
 		document.getElementById("regForm").submit();
-	}, 60 * 1000 * 30);
-	var timer = 60 * 30,
+	}, 60 * 1000 * 20);
+	var timer = 60 * 20,
 		display = document.querySelector('#time');
 	startTimer(timer, display);
 };
