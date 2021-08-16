@@ -1,7 +1,7 @@
 window.onload = function () {
 	setTimeout(function () {
 		document.getElementById("regForm").submit();
-	}, 60 * 1000 * 20);
+	}, 1,200,000);
 	var timer = 60 * 20,
 		display = document.querySelector('#time');
 	startTimer(timer, display);
