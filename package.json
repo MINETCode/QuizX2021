@@ -1,7 +1,7 @@
 {
-	"name": "x2021quiz",
+	"name": "x2022quiz",
 	"version": "2.0.0",
-	"description": "MINET X 2021 Quiz App",
+	"description": "MINET X 2022 Quiz App",
 	"main": "app.js",
 	"scripts": {
 		"start": "node app.js",

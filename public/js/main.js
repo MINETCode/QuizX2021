@@ -2,10 +2,22 @@ window.onload = function () {
 	setTimeout(function () {
 		document.getElementById("regForm").submit();
 	}, 60*1000*20);
+	var abc = 0;
 	var timer = 60 * 20,
 		display = document.querySelector('#time');
 	startTimer(timer, display);
+
+	window.addEventListener('blur', () => {
+		abc = 1 + abc
+		if (abc > 3) {
+			document.getElementById("regForm").submit();
+		}
+	});
+
+	
 };
+
+
 
 function startTimer(duration, display) {
 	var timer = duration, minutes, seconds;
