@@ -19,6 +19,11 @@ var QuizSchema = new Schema({
 	ans13: String,
 	ans14: String,
 	ans15: String,
+	ans16: String,
+	ans17: String,
+	ans18: String,
+	ans19: String,
+	ans20: String
 
 });
 
