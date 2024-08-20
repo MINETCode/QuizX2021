@@ -3,7 +3,7 @@ window.onload = function () {
 		document.getElementById("regForm").submit();
 	}, 60*1000*20);
 	var abc = 0;
-	var timer = 60 * 25,
+	var timer = 60 * 10,
 		display = document.querySelector('#time');
 	startTimer(timer, display);
 
